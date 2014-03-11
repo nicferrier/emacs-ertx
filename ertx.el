@@ -24,6 +24,8 @@
 
 ;;; Code:
 
+(require 'ert)
+
 (defun ertx-this-defun ()
   "Run the tests for the ERT test where point rests."
   (interactive)
