@@ -26,6 +26,7 @@
 
 (require 'ert)
 
+;;;###autoload
 (defun ertx-this-defun ()
   "Run the tests for the ERT test where point rests."
   (interactive)
@@ -39,11 +40,11 @@
             (ert test-name))
           (error "Not in an ert test?")))))
 
+;;;###autoload
 (defun ertx-run-last ()
   "Re-run the last test that you ran."
   (interactive)
   (ert (car ert--selector-history)))
-
 
 (provide 'ertx)
 
