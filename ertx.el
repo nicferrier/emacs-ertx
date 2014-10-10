@@ -1,9 +1,11 @@
-;;; ertx.el --- extensions for ert
+;;; ertx.el --- Extra useful testing functions for EmacsLisp. -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2014  Nic Ferrier
 
 ;; Author: Nic Ferrier <nferrier@ferrier.me.uk>
 ;; Keywords: lisp
+;; Version: 0.0.1
+;; Url: https://github.com/nicferrier/emacs-ertx
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
