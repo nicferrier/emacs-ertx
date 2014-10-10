@@ -22,7 +22,28 @@
 
 ;;; Commentary:
 
-;; Extra useful testing functions.
+;; There are a few glaring ommisions from `ert', most notably,
+;; re-running the last test you did and running this test, that I'm
+;; looking at right now.
+
+;; ertx provides both of those.  Install it, enable the mode in an
+;; elisp file:
+
+;;  M-x ertx-mode
+
+;; and then use: 
+
+;;  C-c t -- to jump to run a test when you are in it's definition
+;;  C-c . -- to re-run the last test
+
+;; A useful thing to do is to add ertx to the emacs-lisp hook so it's
+;; always available in your emacs-lisp buffers:
+
+;;  (add-hook 'emacs-lisp-mode-hook 'ertx-mode)
+
+;; You might even want to customize that so you always have it
+;; available.
+
 
 ;;; Code:
 
