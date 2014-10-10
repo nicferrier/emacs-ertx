@@ -69,6 +69,15 @@
   (interactive)
   (ert (car ert--selector-history)))
 
+;;;###autoload
+(define-minor-mode ertx-mode 
+    "Enable extra ert features like \"run this test\"."
+  :lighter " ertx"
+  :keymap (let ((ertx-map (make-sparse-keymap)))
+            (define-key ertx-map (kbd "C-c t") 'ertx-this-defun)
+            (define-key ertx-map (kbd "C-c .") 'ertx-run-last)
+            ertx-map))
+
 (provide 'ertx)
 
 ;;; ertx.el ends here
